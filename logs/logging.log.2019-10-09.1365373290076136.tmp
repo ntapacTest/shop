@@ -1,0 +1,4 @@
+2019-10-09 19:16:56,521 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2019-10-09 19:16:56,523 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] table "users" does not exist, skipping
+2019-10-09 19:16:56,981 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [restartedMain] HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@12d7344b'
+2019-10-09 19:16:57,119 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [restartedMain] HHH000397: Using ASTQueryTranslatorFactory

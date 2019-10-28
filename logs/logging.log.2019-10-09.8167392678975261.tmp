@@ -1,0 +1,2 @@
+2019-10-09 20:02:55,449 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2019-10-09 20:02:55,450 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] constraint "fk810a8gq30miyp6j1eub97qm6k" of relation "basket" does not exist, skipping

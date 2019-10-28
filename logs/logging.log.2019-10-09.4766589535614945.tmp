@@ -1,0 +1,3 @@
+2019-10-09 19:46:36,181 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-09 19:46:36,250 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-10-09 19:46:36,411 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...

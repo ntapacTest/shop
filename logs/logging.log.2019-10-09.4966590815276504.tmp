@@ -1,0 +1,2 @@
+2019-10-09 19:46:37,524 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [restartedMain] HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@12d7344b'
+2019-10-09 19:46:37,582 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [restartedMain] HHH000397: Using ASTQueryTranslatorFactory
