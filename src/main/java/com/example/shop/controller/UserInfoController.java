@@ -2,6 +2,7 @@ package com.example.shop.controller;
 
 import com.example.shop.exception.UserNotFoundException;
 import com.example.shop.model.User;
+import com.example.shop.pojo.UploadFileResponse;
 import com.example.shop.pojo.UserDetailPojo;
 import com.example.shop.pojo.UserResponce;
 import com.example.shop.security.jwt.JwtUser;
@@ -11,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.validation.Valid;
 
@@ -23,6 +25,9 @@ public class UserInfoController {
     UserService userService;
     User user;
     UserResponce userResponce;
+
+    @Autowired
+    FileController fileController;
 
     @GetMapping("users")
     public UserResponce getUsersData() {
@@ -50,4 +55,18 @@ public class UserInfoController {
         return user;
     }
 
+    //@ResponseStatus(value = HttpStatus.CREATED)
+    @PostMapping("/setUserPic")
+    public UploadFileResponse setUserPic(@AuthenticationPrincipal JwtUser user,@RequestParam("file") MultipartFile file) {
+
+        UploadFileResponse fileResp=fileController.uploadFile(file);
+
+        User dbUser=userService.findUserByEmail(user.getEmail());
+
+        dbUser.setUserpic(fileResp.getFileDownloadUri());
+
+        userService.update(dbUser);
+
+        return fileResp;
+    }
 }

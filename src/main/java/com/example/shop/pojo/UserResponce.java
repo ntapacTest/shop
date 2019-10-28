@@ -32,6 +32,7 @@ public class UserResponce {
         userDetailPojo.setFirstName(users.getFirstName());
         userDetailPojo.setLastName(users.getLastName());
         userDetailPojo.setEmail(users.getEmail());
+        userDetailPojo.setUserPic(users.getUserpic());
         this.users.add(userDetailPojo);
     }
 
